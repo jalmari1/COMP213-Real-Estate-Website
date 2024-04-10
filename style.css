@@ -1,0 +1,446 @@
+@font-face {
+    font-family: 'Playfair';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Playfair'),
+         url('fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype'),
+         url('fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Garamond';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Garamond'),
+         url('fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf') format('truetype'),
+         url('fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+    font-family: 'Playfair';
+  }
+
+.header-container {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.logo-img{
+    width: auto;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+
+/*navigation*/
+.navigation {
+    margin-right: auto;
+}
+
+.navigation ul {
+    list-style-type: none;
+}
+
+.navigation li {
+    display: inline;
+    margin-right: 10px;
+    color: beige;
+}
+
+a:link, a:visited {
+    color: beige;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  a:link:active, a:visited:active {
+    color: beige;
+  }
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 100px;
+    font-family: 'Playfair';
+  }
+
+.search-container-wrapper {
+position: relative;
+height: 400px;
+width: 100%;
+}
+
+.search-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url('images/search-background.webp');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+  }
+
+.search-content {
+    position: relative;
+    padding: 20px;
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+}
+#real-estate-location {
+font-size: 2em;
+}
+
+#slogan {
+    font-size: 0.7em;
+}
+
+#properties-link {
+    width: 120px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 0.6em;
+    background-color: white;
+    font-family: 'Playfair';
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 30px 21px 15px -3px rgba(0,0,0,0.1);
+}
+
+.about-us {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    column-gap: 80px;
+    padding: 100px;
+}
+
+p {
+    text-align: justify;
+
+}
+.about-us-header {
+    font-size: 2em;
+}
+
+.about-us-image {
+    align-content: center;
+}
+#agent-image {
+    width: 500px;
+    height: auto;
+}
+
+.client-feedbacks {
+    display: grid;
+    width: 650px;
+    /* grid-template-columns: 33% 33% 33%; */
+    column-gap: 15px;
+    /* padding-left: 100px; */
+    /* padding-right: 100px; */
+    align-self: center;
+}
+.feedback-header {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 1.5em;
+    color: black;
+}
+
+
+
+/* for properties.html */
+
+#property-1,#property-2,#property-3 {
+    text-decoration: none;
+}
+.property-1-container-wrapper{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.property-1-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 800px;
+    height: auto;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-image: url('images/Property\ 1/property-1-preview.jpeg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.property-2-container-wrapper{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.property-2-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 800px;
+    height: auto;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-image: url('images/Property\ 2/property-2-preview.jpeg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.property-3-container-wrapper{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.property-3-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 800px;
+    height: auto;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-image: url('images/Property\ 3/property-3-preview.jpeg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+/* css for each property pages */
+
+.property-details-container {
+    display: grid;
+    grid-template-columns: 900px 400px;
+    column-gap: 50px;
+}
+
+
+.property-1-details {
+    display: grid;
+    grid-template-columns:400px 400px;
+    row-gap: 50px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+.property-1-location {
+    font-family: 'Garamond';
+}
+.property-1-sub-details {
+    font-family: sans-serif;
+    color: gray;
+}
+
+.property-1-price {
+    font-family: 'Garamond';
+    text-align: right;
+}
+
+.slideshow-container {
+    width: 100%;
+    display: block;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+.slideshow {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+  
+.slide {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    animation: fadeIn 28s linear infinite;
+    opacity: 0;
+  }
+  
+.slide img {
+    width: 800px;
+    height: auto;
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+.slide:nth-child(2) {
+    animation-delay: 4s;
+  }
+  
+.slide:nth-child(3) {
+    animation-delay: 8s;
+  }
+
+.slide:nth-child(4) {
+    animation-delay: 12s;
+  }
+
+  .slide:nth-child(5) {
+    animation-delay: 16s;
+  }
+
+  .slide:nth-child(6) {
+    animation-delay: 20s;
+  }
+  
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    8% {opacity: 1;}
+    33% {opacity: 1;}
+    41% {opacity: 0;}
+    100% {opacity: 0;}
+    /* 0% {opacity: 0;}
+    16.67% {opacity: 1;}
+    33.33% {opacity: 0;}
+    50% {opacity: 1;}
+    66.67% {opacity: 0;}
+    83.33% {opacity: 1;}
+    100% {opacity: 0;} */
+  }
+
+.property-1-house-details {
+    margin-top: 19.920px;
+    padding-top: 50px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+  }
+
+.property-listing-info {
+    width: 400px;
+    font-family: sans-serif;
+    font-size: 1.0em;
+}
+.property-description {
+    font-family: sans-serif;
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+caption {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.property-thumbnail {
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.image-thumbnail img{
+    width: 120px;
+    height: auto;
+}
+
+/* Contact us */
+.contact-us-container{
+    /* background-color:#d8b8ad; */
+}
+
+.form-header {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 1.5em;
+}
+.form-container-wrapper {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    column-gap: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* padding-top: 50px; */
+    padding-bottom: 50px;
+    line-height: 1.5em;
+    /* background-color: #f1f1f1; */
+}
+
+.form-container {
+    /* border: 2px solid black; */
+    background-color: #eaeaea;
+    color: black;
+    padding: 50px;
+}
+
+input[type="text"],input[type="tel"],input[type="email"],input[type="number"] {
+    color: gray;
+}
+
+.company-details {
+    /* border: 2px solid black; */
+    padding-top: 50px;
+    /* background-color: black; */
+}
+
+.company-details img {
+    width: 200px;
+    height: auto;
+}
+
+.site-map-container {
+    display: flex;
+    justify-content: center;
+}
+
+.site-map-container img {
+    width: 600px;
+    height: auto;
+}
+
+footer {
+    font-family: 'Playfair';
+    margin-top: 600px;
+}
+
+.links {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.image-links:hover,.image-links:active,.image-links:visited {
+    color: gray;
+  }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+</head>
+<body class="contact-us-container">
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/Company Logo.png" alt="Company Logo" class="logo-img">
+            </div>
+            <nav>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="sitemap.html">Site Map</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <center><h1>Contact Us</h1></center>
+        <div class="form-container-wrapper">
+            <div class="form-container">
+                <span class="form-header">We want to hear from you</span><br>
+                <span>If you have any questions, comments, or inquiries, please contact us:</span><br><br>
+                <form action="mailto:agents@example.com" method="post" enctype="text/plain">
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname" value = "John" required><br>
+                    
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname" value = "Doe" required><br>
+                   
+                    <label for="phone">Phone: </label><br>
+                    <input type="tel" id="phone" name="phone" value = "123-456-7890" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                   
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" value="john.doe@example.com" required><br>
+                   
+                    <label for="bedrooms">Number of Bedrooms:</label><br>
+                    <input type="number" id="bedrooms" name="bedrooms" value="1" required><br>
+                    
+                    <label for="bathrooms">Number of Bathrooms:</label><br>
+                    <input type="number" id="bathrooms" name="bathrooms" value="1" required><br>
+                   
+                    <label for="priceRange">Choose a price range:</label>
+                    <select id="priceRange" name="priceRange">
+                      <option>Select a price range</option>
+                      <option value="0-499999">$0 - $499,999.99</option>
+                      <option value="500000-999999">$500,000.00 - $999,999.99</option>
+                      <option value="1000000-1999999">$1,000,000.00 - $1,999,999.99</option>
+                      <option value="2000000-2999999">$2,000,000.00 - $2,999,999.99</option>
+                      <option value="3000000-">$3,000,000 and up</option>
+                    </select><br>
+                   
+                    <label for="comments">Additional Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="company-details">
+                <center>
+                    <img src="images/Company Logo.png" alt="Company Logo"><br>
+                    <h2>Jan Almario Real Estates</h2><br>
+                    Address: 123 Main Street, Toronto, ON, M5A 1A1 <br>
+                    Phone: 123-456-7890 <br>
+                    Email: janalmario@realestates.com <br>
+
+                </center>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
